@@ -1,5 +1,5 @@
 # Wan 2.2 Prompt Crafter
-![Alt text](/wan2-2_Prompt_Gen.png)
+
 A desktop app for crafting high‑quality Wan 2.2 video prompts with a clean CustomTkinter UI, controllable creativity modes, and a persistent prompt history. Core UI and logic live in [app.py](app.py:1) and [backend.py](backend.py:1). The complete one‑shot spec is documented in [UI_DESIGN_BLUEPRINT.md](UI_DESIGN_BLUEPRINT.md:1).
 
 ## Quick Start (Windows EXE)
@@ -125,6 +125,18 @@ No license specified. Add a LICENSE file if you intend to distribute.
 ## Acknowledgements
 
 - CustomTkinter for modern dark‑themed Tk UI
-
 - LM Studio / Ollama for local LLM inference
+## One‑Click Builder (Windows)
 
+- Use the provided batch script to go from zero to EXE automatically:
+  - Double‑click [build_exe.bat](build_exe.bat:1)
+  - What it does:
+    - Detects Python (prefers py, falls back to python). If not installed, downloads and silently installs Python 3.10.11 x64.
+    - Ensures pip is available and upgraded.
+    - Installs dependencies from [requirements.txt](requirements.txt:1) (or a minimal set if the file is missing).
+    - Runs PyInstaller with icon + splash + module excludes to produce dist\Wan2PromptCrafter.exe.
+  - Icon/splash path assumed: C:\Users\WontML\Pictures\1a\icon.png. If the file is missing, the script builds without icon/splash and notifies you in the console.
+
+Troubleshooting:
+- If Python installation just finished, the shell PATH may need a new session; the script attempts to refresh PATH heuristically. If it still cannot find python/py, close the terminal and run the batch again.
+- To reduce EXE size further, adjust excludes inside [build_exe.bat](build_exe.bat:1).
