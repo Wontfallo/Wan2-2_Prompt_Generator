@@ -1,5 +1,6 @@
 # Wan 2.2 Prompt Crafter
-
+![Alt text](image path)
+![Alt text](/wan2-2_Prompt_Gen.png).
 A desktop app for crafting high‑quality Wan 2.2 video prompts with a clean CustomTkinter UI, controllable creativity modes, and a persistent prompt history. Core UI and logic live in [app.py](app.py:1) and [backend.py](backend.py:1). The complete one‑shot spec is documented in [UI_DESIGN_BLUEPRINT.md](UI_DESIGN_BLUEPRINT.md:1).
 
 ## Quick Start (Windows EXE)
@@ -139,4 +140,5 @@ No license specified. Add a LICENSE file if you intend to distribute.
 
 Troubleshooting:
 - If Python installation just finished, the shell PATH may need a new session; the script attempts to refresh PATH heuristically. If it still cannot find python/py, close the terminal and run the batch again.
+
 - To reduce EXE size further, adjust excludes inside [build_exe.bat](build_exe.bat:1).
