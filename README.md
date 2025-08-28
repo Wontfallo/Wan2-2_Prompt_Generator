@@ -1,5 +1,5 @@
 # Wan 2.2 Prompt Crafter
-!(alt)[/wan2-2_Prompt_Gen.png]
+![Alt text](/wan2-2_Prompt_Gen.png)
 A desktop app for crafting high‑quality Wan 2.2 video prompts with a clean CustomTkinter UI, controllable creativity modes, and a persistent prompt history. Core UI and logic live in [app.py](app.py:1) and [backend.py](backend.py:1). The complete one‑shot spec is documented in [UI_DESIGN_BLUEPRINT.md](UI_DESIGN_BLUEPRINT.md:1).
 
 ## Quick Start (Windows EXE)
@@ -127,3 +127,4 @@ No license specified. Add a LICENSE file if you intend to distribute.
 - CustomTkinter for modern dark‑themed Tk UI
 
 - LM Studio / Ollama for local LLM inference
+
