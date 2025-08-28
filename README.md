@@ -28,7 +28,7 @@ Run:
 
 The build is already proven with icon + splash:
 - python -m pip install --upgrade pyinstaller
-- pyinstaller --noconfirm --clean --onefile --windowed app.py --name "Wan2PromptCrafter" --icon "C:\Users\WontML\Pictures\1a\icon.png" --splash "C:\Users\WontML\Pictures\1a\icon.png" --exclude-module PyQt5 --exclude-module PyQt6
+- pyinstaller --noconfirm --clean --onefile --windowed app.py --name "Wan2PromptCrafter" --icon "\icon.png" --splash "\icon.png" --exclude-module PyQt5 --exclude-module PyQt6
 
 Result:
 - dist\Wan2PromptCrafter.exe
@@ -136,10 +136,11 @@ No license specified. Add a LICENSE file if you intend to distribute.
     - Ensures pip is available and upgraded.
     - Installs dependencies from [requirements.txt](requirements.txt:1) (or a minimal set if the file is missing).
     - Runs PyInstaller with icon + splash + module excludes to produce dist\Wan2PromptCrafter.exe.
-  - Icon/splash path assumed: C:\Users\WontML\Pictures\1a\icon.png. If the file is missing, the script builds without icon/splash and notifies you in the console.
+  - Icon/splash path assumed: \icon.png. If the file is missing, the script builds without icon/splash and notifies you in the console.
 
 Troubleshooting:
 - If Python installation just finished, the shell PATH may need a new session; the script attempts to refresh PATH heuristically. If it still cannot find python/py, close the terminal and run the batch again.
 
 - To reduce EXE size further, adjust excludes inside [build_exe.bat](build_exe.bat:1).
+
 
