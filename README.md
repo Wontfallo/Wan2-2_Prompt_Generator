@@ -1,7 +1,24 @@
 # Wan 2.2 Prompt Crafter
 ![Alt text](/icon.png)
-![Alt text](/wan2-2_Prompt_Gen.png).
+![Alt text](/wan2-2_Prompt_Gen.png)
+
 A desktop app for crafting high‑quality Wan 2.2 video prompts with a clean CustomTkinter UI, controllable creativity modes, and a persistent prompt history. Core UI and logic live in [app.py](app.py:1) and [backend.py](backend.py:1). The complete one‑shot spec is documented in [UI_DESIGN_BLUEPRINT.md](UI_DESIGN_BLUEPRINT.md:1).
+
+## HTML One-File Solution
+
+For a lightweight, browser-based alternative, use [wan2-2_PromptGenerator_Lite.html](wan2-2_PromptGenerator_Lite.html). This single-file web application provides:
+
+- **Zero installation**: Open directly in any modern browser
+- **Multiple AI model support**: Specialized prompt engineering for:
+  - **Wan 2.2** (video generation)
+  - **FLUX** (image generation with concise, descriptive prompts)
+  - **QWEN** (image generation with photorealistic/artistic focus)
+- **LM Studio & Ollama integration**: Works with local LLM services
+- **Creativity modes**: Precise and Creative prompt generation
+- **Persistent history**: Stored in browser localStorage with search, export (JSON/CSV), and reload capabilities
+- **Inspire Me feature**: Generates scene ideas to kickstart your creativity
+
+Simply open the HTML file in your browser, connect to your local LLM service (LM Studio or Ollama), and start generating prompts. Each target model (Wan 2.2, FLUX, QWEN) has its own optimized system prompt for best results.
 
 ## Quick Start (Windows EXE)
 
