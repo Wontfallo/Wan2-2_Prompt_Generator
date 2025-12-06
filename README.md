@@ -1,4 +1,10 @@
-# Wan 2.2 Prompt Generator
+# Wan 2.2 - FLUX - QWEN  Prompt Generator
+
+### Wan2.2 - QWEN - FLUX Prompt Generator in ComfyUI
+
+![Wan2.2 - QWEN - FLUX Prompt Generator in ComfyUI](ComfyUI-promptGen.png)
+
+### DESKTOP APP Single EXE made in PYTHON
 
 ![Wan 2.2 Prompt Generator](wan2-2_Prompt_Gen.png)
 
@@ -9,7 +15,7 @@ This project aims to generate prompts using various parameters and models.
 - Easy to use
 - Customizable parameters
 - Supports multiple models
-
+### Single HTML File just open the HTML DOC save as a book mark, all the same features!
 ![Wan 2.2 One File HTML Prompter](wan2.2_onefile_PRompter.png)
 
 # Wan 2.2 Prompt Crafter
